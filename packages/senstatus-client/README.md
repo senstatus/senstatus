@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Senstatus Client
+
+Senstatus Client is the front end of the platform that provides the beautiful UI to build your next Status Page. The client is built with React and TailwindCSS.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
