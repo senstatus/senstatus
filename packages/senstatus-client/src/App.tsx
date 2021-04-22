@@ -1,17 +1,20 @@
 import React from 'react'
-import Diagram from "./pages/Diagram";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import SideNav from './components/layouts/SideNav';
+import Content from './components/layouts/Content';
+import Routes from './routes';
+import { BrowserRouter as Router } from "react-router-dom";
 
-const App = () => {
+
+function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path='/'>
-          <Diagram/>
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <Router>
+      <div className="wrapper">
+        <SideNav >
+          <Routes />
+        </SideNav>
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
